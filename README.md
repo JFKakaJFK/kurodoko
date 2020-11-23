@@ -2,10 +2,10 @@
 
 An web app for playing both _Kurodoko_ and _Ohno_, which is also available under [https://kurodoko.xyz](https://kurodoko.xyz).
 
-<div style="display: flex; justify-content: space-evenly">
-  <img alt="Kurodoko menu" src="kurodoko_menu.png" style="width: 30%" />
-  <img alt="Ohno menu" src="ohno_menu.png" style="width: 30%" />
-  <img alt="Kurodoko game" src="kurodoko_game.png" style="width: 30%" />
+<div style="display: flex; justify-content: space-evenly; margin: 0 auto;">
+  <img alt="Kurodoko menu" src="kurodoko_menu.png" style="width: 30%;" width="30%" />
+  <img alt="Ohno menu" src="ohno_menu.png" style="width: 30%;" width="30%" />
+  <img alt="Kurodoko game" src="kurodoko_game.png" style="width: 30%;" width="30%" />
 </div>
 
 # Usage
