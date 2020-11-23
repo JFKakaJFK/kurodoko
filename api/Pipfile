@@ -1,0 +1,28 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+peewee = "*"
+minizinc = "*"
+pandas = "*"
+matplotlib = "*"
+seaborn = "*"
+pyswip = "*"
+pyjnius = "*"
+pulp = "*"
+ortoolpy = "*"
+requests = "*"
+beautifulsoup4 = "*"
+jupyter = "*"
+
+[packages]
+z3-solver = ">=4.8,<5.0"
+tartiflette-aiohttp = ">=1.0"
+gunicorn = ">=20.0"
+aiohttp-cors = "==0.7.0"
+numpy = ">=1.1"
+
+[requires]
+python_version = "3.7"

@@ -1,0 +1,5 @@
+# This dockerignore is only enabled for the production image
+tests
+benchmarks
+np
+**/*.smt

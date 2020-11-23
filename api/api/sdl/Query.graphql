@@ -1,0 +1,40 @@
+directive @rateLimiting(
+  name: String!
+  maxAttempts: Int! = 5
+  duration: Int! = 60
+) on FIELD_DEFINITION
+
+enum PuzzleType {
+  KURODOKO
+  OHNO
+}
+
+enum Difficulty {
+  EASY
+  MEDIUM
+  HARD
+  EXTREME
+}
+
+type Puzzle {
+  id: Int
+  type: PuzzleType!
+  rows: Int!
+  cols: Int!
+  puzzle: [String!]!
+  solution: [String!]!
+  difficulty: Difficulty
+  seed: String
+}
+
+type Solution {
+  satisfiable: Boolean
+  solution: [String!]
+}
+
+type Query {
+  nikoliKurodoko(id: Int!): Puzzle @rateLimiting(name: "nikoli_puzzle", maxAttempts: 10)
+  allNikoliKurodokos: [Puzzle]! @rateLimiting(name: "all_nikoli_puzzles", maxAttempts: 10)
+  solve(type: PuzzleType!, rows: Int!, cols: Int!, puzzle: [String!]!): Solution! @rateLimiting(name: "solve_puzzle")
+  generate(rows: Int!, cols: Int!, type: PuzzleType!, difficulty: Difficulty, seed: String): Puzzle!  @rateLimiting(name: "generate_puzzle")
+}

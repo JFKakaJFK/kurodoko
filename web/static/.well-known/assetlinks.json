@@ -1,0 +1,10 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "xyz.appmaker.kitftw",
+      "sha256_cert_fingerprints": ["7D:78:27:55:0B:8F:A1:68:3E:6E:9A:7A:BF:B2:42:1A:46:8E:18:6C:44:6B:0A:35:84:4F:A3:C1:22:D2:26:C5"]
+    }
+  }
+]

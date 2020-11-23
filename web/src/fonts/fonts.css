@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'Roboto Slab';
+  font-weight: 400;
+  font-style: normal;
+  src: url("RobotoSlab.woff2") format("woff2"),
+    url("RobotoSlab.woff") format("woff"),
+    url('RobotoSlab.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Otsutome';
+  font-weight: bold;
+  font-style: italic;
+  src: url("Otsutome.woff2") format("woff2"),
+    url("Otsutome.woff") format("woff"),
+    url('Otsutome.ttf') format('truetype');
+  font-display: swap;
+}
